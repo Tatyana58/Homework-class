@@ -7,13 +7,14 @@ public class Print {
         Book bookName2 = new Book(new Author(author2.getName(), author2.getSurname()),"Java Решение практических задач", 2021);
         printInfo(author1,author1,bookName1,bookName1);
         printInfo(author2,author2,bookName2,bookName2);
-        bookName1.setYearPublication(2020);
+        bookName2.setYearPublication(2022);
         System.out.println("Изменили год издания");
         printInfo(author1,author1,bookName1,bookName1);
+        printInfo(author2,author2,bookName2,bookName2);
     }
-    public static void printInfo(Author author, Author author2, Book nameBook, Book year ) {
-        System.out.println("Новый Автор, название книги, год издания: " + author.getName() + " " + author2.getSurname() + " "
-                + nameBook.getTitleBook() + " " + year.getYearPublication());
+    public static void printInfo(Author author, Author author2, Book bookName, Book yearPublication ) {
+        System.out.println("Автор, название книги, год издания: " + author.getName() + " " + author2.getSurname() + " "
+                + bookName.getTitleBook() + " " + yearPublication.getYearPublication());
     }
 
 }
