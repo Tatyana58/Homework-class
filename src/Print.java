@@ -7,7 +7,7 @@ public class Print {
         printInfo(author1, author1, bookName1, bookName1);
         printInfo(author2, author2, bookName2, bookName2);
         bookName2.setYearPublication(2022);
-        System.out.println("Изменили год издания");
+        System.out.println("Изменили год издания ");
         printInfo(author1, author1, bookName1, bookName1);
         printInfo(author2, author2, bookName2, bookName2);
     }
