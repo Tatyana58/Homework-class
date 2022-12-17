@@ -1,5 +1,4 @@
 import java.util.Objects;
-
 public class Book {
     private String titleBook;
     private int yearPublication;
@@ -25,11 +24,7 @@ public class Book {
 
     @Override
     public String toString() {
-        return "Book{" +
-                "titleBook='" + titleBook + '\'' +
-                ", yearPublication=" + yearPublication +
-                ", author=" + author +
-                '}';
+        return "" + author+" "+this.titleBook + " "+this.yearPublication;
     }
 
     @Override
