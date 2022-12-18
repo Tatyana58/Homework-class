@@ -1,7 +1,7 @@
 import java.util.Objects;
 
 public class Author {
-    private String name;
+    private final String name;
     private final String surName;
 
     public Author(String name, String surName) {
